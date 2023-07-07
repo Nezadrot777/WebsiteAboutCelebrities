@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <!--    добавим шрифты-->
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Tinos:wght@400;700&display=swap" rel="stylesheet">
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital@1&display=swap" rel="stylesheet">
+    <title>Forma</title>
+</head>
+<body>
+    <!-- шапка -->
+    <header>
+        <a class="up" href="index.php">
+            <img class="ikon" src="img/free-icon-music-3083417.png" alt="ikon">
+        </a>
+        <div class="menu">
+            <a class="color" href="index.php">Главная</a>
+            <a class="color" href="music.html">Дискография</a>
+            <a class="color" href="films.html">Фильмография</a>
+            <a class="color" href="forma.html">Фан-встречи</a>
+            <a class="color" href="pictures.html">Фотографии</a>
+        </div>
+        <div class="adress_map">
+            <a class="up" href="https://yandex.ru/maps/-/CCU8fMwC2D">
+                <img class="map" src="img/map.png" alt="map" width="40">
+            </a>
+            <p class="adress">Брянск, ул. Войстроченко</p>
+        </div>
+    </header>
+    <main class="form_all">
+        <div class="text_form">
+            <h3>Если хотите посетить фан-встречи, то можете оставить заявку
+            <br>и мы с вами обязательно свяжемся!</h3>
+            <h3>Вы также можете предложить свои варианты дат и мы их рассмотрим.</h3>
+        </div>
+         <!-- форма -->
+         <div class="form">
+            <form action="database/connection.php" method="post" name="meeting" class="main-form" autocomplete="off" onsubmit="return validateForm()">
+                <label for="FIO">ФИО</label><br>
+                <input name="FIO" type="text" id="FIO" required placeholder="Иванов Иван Иванович"><br>
+                <label for="phone">Телефон</label><br>
+                <input name="phone" type="text" id="phone" required placeholder="+7-999-999-99-99"><br>
+                <label for="email">E-mail</label><br>
+                <input name="email" type="email" id="email" required placeholder="info@gmail.com"><br>
+                <label for="datetime">Желаемая дата</label><br>
+                <input name="datetime" type="date" id="datetime" required><br>
+                <input class="main-button" type="reset" onclick="alert('Данные очищены')"
+                name="check_one" value="Очистить">
+                <input class="main-button" type="submit" onclick="alert('Данные отправлены')"
+                 name="check_two" value="Отправить">
+            </form>
+            <div class="when">
+                <br>
+                <h4>Ближайшие даты встреч:</h4>
+                <br>
+                <ul class="fans">
+                    <li>25 апреля 2023 года</li>
+                    <li>15 мая 2023 года</li>
+                    <li>25 мая 2023 года</li>
+                    <li>15 июня 2023 года</li>
+                    <li>25 июня 2023 года</li>
+                </ul>
+            </div>
+            <img src="img/1569321992_dzhastin-timberlejk-77.jpg" alt="pic" width="400">
+         </div>
+    </main>
+    <!-- футер -->
+    <footer>
+        <a class="up" href="forma.html">
+            <img class="ikon" src="img/free-icon-up-arrow-2268177.png" alt="ikon">
+        </a>
+        <div class="header">
+            <h3>МЕНЮ</h3>
+            <br>
+            <a class="color" href="index.php">Главная</a>
+            <br>
+            <a class="color" href="music.html">Дискография</a>
+            <br>
+            <a class="color" href="films.html">Фильмография</a>
+            <br>
+            <a class="color" href="forma.html">Фан-встречи</a>
+            <br>
+            <a class="color" href="pictures.html">Фотографии</a>
+        </div>
+        <div class="socials">
+            <h3>СОЦИАЛЬНЫЕ СЕТИ</h3>
+            <br>
+            <a class="social" href="https://vk.com/">
+                <img src="img/vk.png" alt="vk" width="40">
+            </a>
+            <a class="social" href="https://ok.ru">
+                <img src="img/free-icon-odnoklassniki-2504930.png" alt="ok" width="40">
+            </a>
+            <a class="social" href="https://www.youtube.com">
+                <img src="img/free-icon-youtube-3938037.png" alt="yotube" width="40">
+            </a>
+        </div>
+        <div class="about">
+            <p>Брянск</p>
+            <p>Смородинова Вероника Сергеевна</p>
+            <p>2023</p>
+        </div>
+    </footer>
+
+    <!--путь к файлу app.js  -->
+    <script src='js/app.js'></script>
+
+</body>
+</html>

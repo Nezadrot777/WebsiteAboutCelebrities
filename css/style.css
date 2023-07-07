@@ -1,0 +1,202 @@
+* {
+    padding: 0;
+    margin: 0;
+    color: black;
+    text-decoration: none;
+    font-family: 'Tinos', serif;
+}
+
+header {
+    background-color: rgb(155, 126, 83);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 25px 25px;
+    box-shadow: 0px 11px 8px -10px;
+    font-size: 20px;
+}
+
+.color:hover {
+    color: #d3cfcf;
+    text-decoration: underline;
+}
+
+.ikon {
+    width: 100px;
+}
+
+.menu {
+    word-spacing: 10px;
+}
+
+.adress_map {
+    display: flex;
+}
+
+.map {
+    margin-right: 10px;
+}
+
+.title {
+    background-color: bisque;
+    padding: 25px 25px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px;
+}
+
+.music_title,
+.pictures_title,
+.films_title,
+.form_all {
+    background-color: bisque;
+    padding: 25px 25px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px;
+}
+
+
+.greeting {
+    background-image: url("/img/asklskakl.png");
+    background-size: cover; 
+    height: 100vh;
+    background-repeat: no-repeat;
+    justify-content: space-between;
+    padding: 150px 150px;
+    font-size: 32px;
+}
+
+.article_text_1,
+.article_text_2 {
+    font-size: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: 30px 30px;
+    padding: 30px 30px;
+}
+
+.form {
+    background-color: bisque;
+    font-size: 20px;
+    display: flex;
+    align-items: center; 
+    justify-content: space-around;
+    margin: 20px 20px;
+    padding: 50px 50px; 
+}
+
+.main-form {
+    font-size: 20px;
+    padding: 25px 25px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px; 
+}
+
+.text_form {
+    margin-top: 20px;
+    padding-top: 20px;
+    display: flex;
+    align-items: center; 
+    justify-content: space-around;
+}
+
+input {
+    font-size: 20px;
+    width: 300px; 
+    height: 35px;
+    border-radius: 5px;
+    border-color: rgb(131, 83, 43);    
+}
+
+.main-button {
+    font-size: 20px;
+    margin: 20px auto;
+    padding-bottom: 5px;
+    display: block;
+    width: 300px; 
+    height: 35px;
+    border-radius: 5px;
+    color: white;
+    background-color: rgb(131, 83, 43);
+    border-color: rgb(131, 83, 43);
+    width: 80%;
+}
+
+.music,
+.albom_one,
+.albom_two,
+.albom_three,
+.albom_for, 
+.films,
+.film_one,
+.film_two,
+.film_three,
+.film_for,
+.film_five,
+.film_six,
+.film_seven {
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+    padding: 20px;
+}
+
+.audio {
+    margin: 20px;
+    padding: 20px;
+}
+
+.pictures_one,
+.pictures_two,
+.pictures_three,
+.pictures_for,
+.pictures_five {
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+    padding: 20px;
+}
+
+.film_pic,
+.img_img {
+    margin-right: 20px;
+}
+
+img {
+    border-radius: 10px;
+}
+
+li:not(.fans) {
+    margin: 10px;
+    padding: 10px;
+    list-style-type: none;
+}
+
+.music_pic {
+    margin: 10px;
+    padding: 10px;
+}
+
+footer {
+    background-color: rgb(155, 126, 83);
+    display: flex;
+    justify-content: space-between;
+    font-size: 20px;
+    gap: 200px;
+    padding: 25px 25px;
+    box-shadow: 0px -11px 8px -10px;
+}
+
+.up:hover {
+    transform: scale(1.2);
+}
+
+.social {
+    margin: 15px;
+}
+
+.about {
+    margin: 20px;
+    padding: 20px;
+}
